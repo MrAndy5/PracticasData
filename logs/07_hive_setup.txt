@@ -1,0 +1,640 @@
+Command exited with code 0.
+
+Command output:
+Authorized uses only. All activity may be monitored and reported.
+SLF4J: The following set of substitute loggers may have been accessed
+SLF4J: during the initialization phase. Logging calls during this
+SLF4J: phase were not honored. However, subsequent logging calls to these
+SLF4J: loggers will work as normally expected.
+SLF4J: See also http://www.slf4j.org/codes.html#substituteLogger
+SLF4J: org.fluentd.logger.sender.RawSocketSender
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/5.1.8.42/hive/lib/log4j-slf4j-impl-2.18.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/5.1.8.42/hadoop/lib/slf4j-reload4j-1.7.35.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+Connecting to jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181,zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181,zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181/default;authentication=ActiveDirectoryManagedIdentity;httpPath=/;serviceDiscoveryMode=zooKeeper;transportMode=http;user=496c2b62-322a-4307-98c3-cfe8d48bacf8;zooKeeperNamespace=hiveserver2
+26/11/24 07:35:26 [main]: INFO jdbc.HiveConnection: Connected to hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:10001
+Connected to: Apache Hive (version 3.1.2.5.1.8.42)
+Driver: Hive JDBC (version 3.1.2.5.1.8.42)
+Transaction isolation: TRANSACTION_REPEATABLE_READ
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> CREATE DATABASE IF NOT EXISTS ASJ L;
+INFO  : Compiling command(queryId=hive_20261124073527_940ac054-0697-4906-b010-9aec499c9e7b): CREATE DATABASE IF NOT EXISTS ASJL
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073527_940ac054-0697-4906-b010-9aec499c9e7b : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073527_940ac054-0697-4906-b010-9aec499c9e7b); Time taken: 0.703 seconds
+INFO  : Executing command(queryId=hive_20261124073527_940ac054-0697-4906-b010-9aec499c9e7b): CREATE DATABASE IF NOT EXISTS ASJL
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073527_940ac054-0697-4906-b010-9aec499c9e7b); Time taken: 0.047 seconds
+INFO  : OK
+No rows affected (1.041 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> USE ASJL;
+INFO  : Compiling command(queryId=hive_20261124073528_bfac490a-814c-473f-9e95-cd9836d9a6df): USE ASJL
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073528_bfac490a-814c-473f-9e95-cd9836d9a6df : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073528_bfac490a-814c-473f-9e95-cd9836d9a6df); Time taken: 0.132 seconds
+INFO  : Executing command(queryId=hive_20261124073528_bfac490a-814c-473f-9e95-cd9836d9a6df): USE ASJL
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073528_bfac490a-814c-473f-9e95-cd9836d9a6df); Time taken: 0.107 seconds
+INFO  : OK
+No rows affected (0.283 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> DROP TABLE IF EXISTS pm_csv_ext;
+INFO  : Compiling command(queryId=hive_20261124073529_b0a6e196-9b69-4c71-b201-e47f5a63191f): DROP TABLE IF EXISTS pm_csv_ext
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073529_b0a6e196-9b69-4c71-b201-e47f5a63191f : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+        Drop Table
+          table: pm_csv_ext
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073529_b0a6e196-9b69-4c71-b201-e47f5a63191f); Time taken: 0.173 seconds
+INFO  : Executing command(queryId=hive_20261124073529_b0a6e196-9b69-4c71-b201-e47f5a63191f): DROP TABLE IF EXISTS pm_csv_ext
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073529_b0a6e196-9b69-4c71-b201-e47f5a63191f); Time taken: 0.039 seconds
+INFO  : OK
+No rows affected (0.351 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> DROP TABLE IF EXISTS pm_orc;
+INFO  : Compiling command(queryId=hive_20261124073529_5b8141c7-a4bd-473f-a15f-4bca88a8eb38): DROP TABLE IF EXISTS pm_orc
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073529_5b8141c7-a4bd-473f-a15f-4bca88a8eb38 : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Drop Table Operator:
+        Drop Table
+          table: pm_orc
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073529_5b8141c7-a4bd-473f-a15f-4bca88a8eb38); Time taken: 0.168 seconds
+INFO  : Executing command(queryId=hive_20261124073529_5b8141c7-a4bd-473f-a15f-4bca88a8eb38): DROP TABLE IF EXISTS pm_orc
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073529_5b8141c7-a4bd-473f-a15f-4bca88a8eb38); Time taken: 0.04 seconds
+INFO  : OK
+No rows affected (0.368 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> CREATE EXTERNAL TABLE pm_csv_ext  (
+. . . . . . . . . . . . . . . . . . . . . . .>   deviceid INT,
+. . . . . . . . . . . . . . . . . . . . . . .>   devicename INT,
+. . . . . . . . . . . . . . . . . . . . . . .>   resourcename STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   collectiontime STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   granularityperiod INT,
+. . . . . . . . . . . . . . . . . . . . . . .>   rxunicast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   rxmulcast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   rxbrdcast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   txunicast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   txmulcast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   txbrdcast STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   rxfullbgood STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   txfullbgood STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   txpkts STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   rxpkts STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   port_rx_bw_utilization STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   port_tx_bw_utilization STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_rx_throughput_max STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_rx_throughput_min STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_rx_throughput_avg STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   rx_drop_ratio DOUBLE,
+. . . . . . . . . . . . . . . . . . . . . . .>   tx_drop_ratio DOUBLE,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_tx_throughput_max STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_tx_throughput_min STRING,
+. . . . . . . . . . . . . . . . . . . . . . .>   eth_tx_throughput_avg STRING
+. . . . . . . . . . . . . . . . . . . . . . .> )
+. . . . . . . . . . . . . . . . . . . . . . .> ROW FORMAT DELIMITED
+. . . . . . . . . . . . . . . . . . . . . . .> FIELDS TERMINATED BY ';'
+. . . . . . . . . . . . . . . . . . . . . . .> STORED AS TEXTFILE
+. . . . . . . . . . . . . . . . . . . . . . .> LOCATION '/HadoopLab/AndresSanche z/'
+. . . . . . . . . . . . . . . . . . . . . . .> TBLPROPERTIES ('skip.header.line. count'='1');
+INFO  : Compiling command(queryId=hive_20261124073530_fe22125a-6302-4939-89a9-498f0fe953f8): CREATE EXTERNAL TABLE pm_csv_ext (
+deviceid INT,
+devicename INT,
+resourcename STRING,
+collectiontime STRING,
+granularityperiod INT,
+rxunicast STRING,
+rxmulcast STRING,
+rxbrdcast STRING,
+txunicast STRING,
+txmulcast STRING,
+txbrdcast STRING,
+rxfullbgood STRING,
+txfullbgood STRING,
+txpkts STRING,
+rxpkts STRING,
+port_rx_bw_utilization STRING,
+port_tx_bw_utilization STRING,
+eth_rx_throughput_max STRING,
+eth_rx_throughput_min STRING,
+eth_rx_throughput_avg STRING,
+rx_drop_ratio DOUBLE,
+tx_drop_ratio DOUBLE,
+eth_tx_throughput_max STRING,
+eth_tx_throughput_min STRING,
+eth_tx_throughput_avg STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ';'
+STORED AS TEXTFILE
+LOCATION '/HadoopLab/AndresSanchez/'
+TBLPROPERTIES ('skip.header.line.count'='1')
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073530_fe22125a-6302-4939-89a9-498f0fe953f8 : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Create Table Operator:
+        Create Table
+          columns: deviceid int, devicename int, resourcename string, collectiontime string, granularityperiod int, rxunicast string, rxmulcast string, rxbrdcast string, txunicast string, txmulcast string, txbrdcast string, rxfullbgood string, txfullbgood string, txpkts string, rxpkts string, port_rx_bw_utilization string, port_tx_bw_utilization string, eth_rx_throughput_max string, eth_rx_throughput_min string, eth_rx_throughput_avg string, rx_drop_ratio double, tx_drop_ratio double, eth_tx_throughput_max string, eth_tx_throughput_min string, eth_tx_throughput_avg string
+          field delimiter: ;
+          input format: org.apache.hadoop.mapred.TextInputFormat
+          location: /HadoopLab/AndresSanchez/
+          output format: org.apache.hadoop.hive.ql.io.IgnoreKeyTextOutputFormat
+          serde name: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+          name: ASJL.pm_csv_ext
+          table properties:
+            skip.header.line.count 1
+          isExternal: true
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073530_fe22125a-6302-4939-89a9-498f0fe953f8); Time taken: 0.24 seconds
+INFO  : Executing command(queryId=hive_20261124073530_fe22125a-6302-4939-89a9-498f0fe953f8): CREATE EXTERNAL TABLE pm_csv_ext (
+deviceid INT,
+devicename INT,
+resourcename STRING,
+collectiontime STRING,
+granularityperiod INT,
+rxunicast STRING,
+rxmulcast STRING,
+rxbrdcast STRING,
+txunicast STRING,
+txmulcast STRING,
+txbrdcast STRING,
+rxfullbgood STRING,
+txfullbgood STRING,
+txpkts STRING,
+rxpkts STRING,
+port_rx_bw_utilization STRING,
+port_tx_bw_utilization STRING,
+eth_rx_throughput_max STRING,
+eth_rx_throughput_min STRING,
+eth_rx_throughput_avg STRING,
+rx_drop_ratio DOUBLE,
+tx_drop_ratio DOUBLE,
+eth_tx_throughput_max STRING,
+eth_tx_throughput_min STRING,
+eth_tx_throughput_avg STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ';'
+STORED AS TEXTFILE
+LOCATION '/HadoopLab/AndresSanchez/'
+TBLPROPERTIES ('skip.header.line.count'='1')
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073530_fe22125a-6302-4939-89a9-498f0fe953f8); Time taken: 0.393 seconds
+INFO  : OK
+No rows affected (0.866 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> CREATE TABLE pm_orc AS SELECT * F ROM pm_csv_ext;
+INFO  : Compiling command(queryId=hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8): CREATE TABLE pm_orc AS SELECT * FROM pm_csv_ext
+INFO  : No Stats for asjl@pm_csv_ext, Columns: rxunicast, rx_drop_ratio, eth_rx_throughput_avg, eth_rx_throughput_min, tx_drop_ratio, port_tx_bw_utilization, txfullbgood, eth_tx_throughput_max, txunicast, rxpkts, rxfullbgood, txmulcast, port_rx_bw_utilization, eth_tx_throughput_min, eth_tx_throughput_avg, txbrdcast, rxmulcast, rxbrdcast, deviceid, granularityperiod, devicename, resourcename, collectiontime, txpkts, eth_rx_throughput_max
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:pm_csv_ext.deviceid, type:int, comment:null), FieldSchema(name:pm_csv_ext.devicename, type:int, comment:null), FieldSchema(name:pm_csv_ext.resourcename, type:string, comment:null), FieldSchema(name:pm_csv_ext.collectiontime, type:string, comment:null), FieldSchema(name:pm_csv_ext.granularityperiod, type:int, comment:null), FieldSchema(name:pm_csv_ext.rxunicast, type:string, comment:null), FieldSchema(name:pm_csv_ext.rxmulcast, type:string, comment:null), FieldSchema(name:pm_csv_ext.rxbrdcast, type:string, comment:null), FieldSchema(name:pm_csv_ext.txunicast, type:string, comment:null), FieldSchema(name:pm_csv_ext.txmulcast, type:string, comment:null), FieldSchema(name:pm_csv_ext.txbrdcast, type:string, comment:null), FieldSchema(name:pm_csv_ext.rxfullbgood, type:string, comment:null), FieldSchema(name:pm_csv_ext.txfullbgood, type:string, comment:null), FieldSchema(name:pm_csv_ext.txpkts, type:string, comment:null), FieldSchema(name:pm_csv_ext.rxpkts, type:string, comment:null), FieldSchema(name:pm_csv_ext.port_rx_bw_utilization, type:string, comment:null), FieldSchema(name:pm_csv_ext.port_tx_bw_utilization, type:string, comment:null), FieldSchema(name:pm_csv_ext.eth_rx_throughput_max, type:string, comment:null), FieldSchema(name:pm_csv_ext.eth_rx_throughput_min, type:string, comment:null), FieldSchema(name:pm_csv_ext.eth_rx_throughput_avg, type:string, comment:null), FieldSchema(name:pm_csv_ext.rx_drop_ratio, type:double, comment:null), FieldSchema(name:pm_csv_ext.tx_drop_ratio, type:double, comment:null), FieldSchema(name:pm_csv_ext.eth_tx_throughput_max, type:string, comment:null), FieldSchema(name:pm_csv_ext.eth_tx_throughput_min, type:string, comment:null), FieldSchema(name:pm_csv_ext.eth_tx_throughput_avg, type:string, comment:null)], properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8 : STAGE DEPENDENCIES:
+  Stage-1 is a root stage [MAPRED]
+  Stage-2 depends on stages: Stage-1 [DEPENDENCY_COLLECTION]
+  Stage-4 depends on stages: Stage-2, Stage-0 [DDL]
+  Stage-3 depends on stages: Stage-4 [STATS]
+  Stage-0 depends on stages: Stage-1 [MOVE]
+
+STAGE PLANS:
+  Stage: Stage-1
+    Tez
+      DagId: hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8:31
+      DagName: hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8:31
+      Vertices:
+        Map 1 
+            Map Operator Tree:
+                TableScan
+                  alias: pm_csv_ext
+                  Statistics: Num rows: 584667 Data size: 2049719364 Basic stats: COMPLETE Column stats: NONE
+                  GatherStats: false
+                  Select Operator
+                    expressions: deviceid (type: int), devicename (type: int), resourcename (type: string), collectiontime (type: string), granularityperiod (type: int), rxunicast (type: string), rxmulcast (type: string), rxbrdcast (type: string), txunicast (type: string), txmulcast (type: string), txbrdcast (type: string), rxfullbgood (type: string), txfullbgood (type: string), txpkts (type: string), rxpkts (type: string), port_rx_bw_utilization (type: string), port_tx_bw_utilization (type: string), eth_rx_throughput_max (type: string), eth_rx_throughput_min (type: string), eth_rx_throughput_avg (type: string), rx_drop_ratio (type: double), tx_drop_ratio (type: double), eth_tx_throughput_max (type: string), eth_tx_throughput_min (type: string), eth_tx_throughput_avg (type: string)
+                    outputColumnNames: _col0, _col1, _col2, _col3, _col4, _col5, _col6, _col7, _col8, _col9, _col10, _col11, _col12, _col13, _col14, _col15, _col16, _col17, _col18, _col19, _col20, _col21, _col22, _col23, _col24
+                    Statistics: Num rows: 584667 Data size: 2049719364 Basic stats: COMPLETE Column stats: NONE
+                    File Output Operator
+                      compressed: false
+                      GlobalTableId: 1
+                      directory: wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/.hive-staging_hive_2026-11-24_07-35-31_034_6380595797154359049-2/-ext-10002
+                      NumFilesPerFileSink: 1
+                      Statistics: Num rows: 584667 Data size: 2049719364 Basic stats: COMPLETE Column stats: NONE
+                      Stats Publishing Key Prefix: wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/.hive-staging_hive_2026-11-24_07-35-31_034_6380595797154359049-2/-ext-10002/
+                      table:
+                          input format: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat
+                          output format: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat
+                          properties:
+                            columns deviceid,devicename,resourcename,collectiontime,granularityperiod,rxunicast,rxmulcast,rxbrdcast,txunicast,txmulcast,txbrdcast,rxfullbgood,txfullbgood,txpkts,rxpkts,port_rx_bw_utilization,port_tx_bw_utilization,eth_rx_throughput_max,eth_rx_throughput_min,eth_rx_throughput_avg,rx_drop_ratio,tx_drop_ratio,eth_tx_throughput_max,eth_tx_throughput_min,eth_tx_throughput_avg
+                            columns.types int:int:string:string:int:string:string:string:string:string:string:string:string:string:string:string:string:string:string:string:double:double:string:string:string
+                            name ASJL.pm_orc
+                            serialization.format 1
+                            serialization.lib org.apache.hadoop.hive.ql.io.orc.OrcSerde
+                            transactional true
+                            transactional_properties default
+                          serde: org.apache.hadoop.hive.ql.io.orc.OrcSerde
+                          name: ASJL.pm_orc
+                      TotalFiles: 1
+                      Write Type: INSERT
+                      GatherStats: true
+                      MultiFileSpray: false
+            Execution mode: vectorized
+            Path -> Alias:
+              wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/HadoopLab/AndresSanchez [pm_csv_ext]
+            Path -> Partition:
+              wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/HadoopLab/AndresSanchez 
+                Partition
+                  base file name: AndresSanchez
+                  input format: org.apache.hadoop.mapred.TextInputFormat
+                  output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                  properties:
+                    EXTERNAL TRUE
+                    bucket_count -1
+                    bucketing_version 2
+                    column.name.delimiter ,
+                    columns deviceid,devicename,resourcename,collectiontime,granularityperiod,rxunicast,rxmulcast,rxbrdcast,txunicast,txmulcast,txbrdcast,rxfullbgood,txfullbgood,txpkts,rxpkts,port_rx_bw_utilization,port_tx_bw_utilization,eth_rx_throughput_max,eth_rx_throughput_min,eth_rx_throughput_avg,rx_drop_ratio,tx_drop_ratio,eth_tx_throughput_max,eth_tx_throughput_min,eth_tx_throughput_avg
+                    columns.comments 
+                    columns.types int:int:string:string:int:string:string:string:string:string:string:string:string:string:string:string:string:string:string:string:double:double:string:string:string
+                    discover.partitions true
+                    field.delim ;
+                    file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                    file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    location wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/HadoopLab/AndresSanchez
+                    name asjl.pm_csv_ext
+                    numFiles 1
+                    serialization.ddl struct pm_csv_ext { i32 deviceid, i32 devicename, string resourcename, string collectiontime, i32 granularityperiod, string rxunicast, string rxmulcast, string rxbrdcast, string txunicast, string txmulcast, string txbrdcast, string rxfullbgood, string txfullbgood, string txpkts, string rxpkts, string port_rx_bw_utilization, string port_tx_bw_utilization, string eth_rx_throughput_max, string eth_rx_throughput_min, string eth_rx_throughput_avg, double rx_drop_ratio, double tx_drop_ratio, string eth_tx_throughput_max, string eth_tx_throughput_min, string eth_tx_throughput_avg}
+                    serialization.format ;
+                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    skip.header.line.count 1
+                    totalSize 129328366
+                    transient_lastDdlTime 1795505730
+                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                
+                    input format: org.apache.hadoop.mapred.TextInputFormat
+                    output format: org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                    properties:
+                      EXTERNAL TRUE
+                      bucket_count -1
+                      bucketing_version 2
+                      column.name.delimiter ,
+                      columns deviceid,devicename,resourcename,collectiontime,granularityperiod,rxunicast,rxmulcast,rxbrdcast,txunicast,txmulcast,txbrdcast,rxfullbgood,txfullbgood,txpkts,rxpkts,port_rx_bw_utilization,port_tx_bw_utilization,eth_rx_throughput_max,eth_rx_throughput_min,eth_rx_throughput_avg,rx_drop_ratio,tx_drop_ratio,eth_tx_throughput_max,eth_tx_throughput_min,eth_tx_throughput_avg
+                      columns.comments 
+                      columns.types int:int:string:string:int:string:string:string:string:string:string:string:string:string:string:string:string:string:string:string:double:double:string:string:string
+                      discover.partitions true
+                      field.delim ;
+                      file.inputformat org.apache.hadoop.mapred.TextInputFormat
+                      file.outputformat org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat
+                      location wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/HadoopLab/AndresSanchez
+                      name asjl.pm_csv_ext
+                      numFiles 1
+                      serialization.ddl struct pm_csv_ext { i32 deviceid, i32 devicename, string resourcename, string collectiontime, i32 granularityperiod, string rxunicast, string rxmulcast, string rxbrdcast, string txunicast, string txmulcast, string txbrdcast, string rxfullbgood, string txfullbgood, string txpkts, string rxpkts, string port_rx_bw_utilization, string port_tx_bw_utilization, string eth_rx_throughput_max, string eth_rx_throughput_min, string eth_rx_throughput_avg, double rx_drop_ratio, double tx_drop_ratio, string eth_tx_throughput_max, string eth_tx_throughput_min, string eth_tx_throughput_avg}
+                      serialization.format ;
+                      serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                      skip.header.line.count 1
+                      totalSize 129328366
+                      transient_lastDdlTime 1795505730
+                    serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe
+                    name: asjl.pm_csv_ext
+                  name: asjl.pm_csv_ext
+            Truncated Path -> Alias:
+              wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/HadoopLab/AndresSanchez [pm_csv_ext]
+
+  Stage: Stage-2
+    Dependency Collection
+
+  Stage: Stage-4
+      Create Table Operator:
+        Create Table
+          columns: deviceid int, devicename int, resourcename string, collectiontime string, granularityperiod int, rxunicast string, rxmulcast string, rxbrdcast string, txunicast string, txmulcast string, txbrdcast string, rxfullbgood string, txfullbgood string, txpkts string, rxpkts string, port_rx_bw_utilization string, port_tx_bw_utilization string, eth_rx_throughput_max string, eth_rx_throughput_min string, eth_rx_throughput_avg string, rx_drop_ratio double, tx_drop_ratio double, eth_tx_throughput_max string, eth_tx_throughput_min string, eth_tx_throughput_avg string
+          input format: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat
+          output format: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat
+          serde name: org.apache.hadoop.hive.ql.io.orc.OrcSerde
+          name: ASJL.pm_orc
+          table properties:
+            transactional true
+            transactional_properties default
+
+  Stage: Stage-3
+    Stats Work
+      Basic Stats Work:
+          Stats Aggregation Key Prefix: wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/.hive-staging_hive_2026-11-24_07-35-31_034_6380595797154359049-2/-ext-10002/
+
+  Stage: Stage-0
+    Move Operator
+      files:
+          hdfs directory: true
+          source: wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/.hive-staging_hive_2026-11-24_07-35-31_034_6380595797154359049-2/-ext-10002
+          destination: wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/pm_orc
+          Write Type: INSERT
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8); Time taken: 2.241 seconds
+INFO  : Executing command(queryId=hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8): CREATE TABLE pm_orc AS SELECT * FROM pm_csv_ext
+INFO  : Query ID = hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8
+INFO  : Total jobs = 1
+INFO  : Launching Job 1 out of 1
+INFO  : Starting task [Stage-1:MAPRED] in serial mode
+INFO  : Subscribed to counters: [] for queryId: hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8
+INFO  : Tez session hasn't been created yet. Opening session
+INFO  : Dag name: CREATE TABLE pm_orc AS SELECT *...pm_csv_ext (Stage-1)
+INFO  : Status: Running (Executing on YARN cluster with App id application_1795385228332_0006)
+
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container        INITED      8          0        0        8       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 3.37 s     
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        2        6       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 4.88 s     
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        6        2       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 6.39 s     
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 7.90 s     
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 9.40 s     
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 10.91 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 12.42 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 13.92 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 15.93 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 17.94 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 19.94 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 21.95 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 23.96 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 26.46 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 28.97 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 31.48 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 33.98 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 36.99 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1            container       RUNNING      8          0        8        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [>>--------------------------] 0%    ELAPSED TIME: 40.00 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1 .          container       RUNNING      8          1        7        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [===>>-----------------------] 12%   ELAPSED TIME: 43.00 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1 .....      container       RUNNING      8          4        4        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [=============>>-------------] 50%   ELAPSED TIME: 46.01 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1 ........   container       RUNNING      8          7        1        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 00/01  [======================>>----] 87%   ELAPSED TIME: 49.52 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      8          8        0        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 01/01  [==========================>>] 100%  ELAPSED TIME: 53.03 s    
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED  
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      8          8        0        0       0       0  
+----------------------------------------------------------------------------------------------
+VERTICES: 01/01  [==========================>>] 100%  ELAPSED TIME: 53.65 s    
+----------------------------------------------------------------------------------------------
+INFO  : Starting task [Stage-2:DEPENDENCY_COLLECTION] in serial mode
+INFO  : Starting task [Stage-0:MOVE] in serial mode
+INFO  : Starting task [Stage-4:DDL] in serial mode
+INFO  : Starting task [Stage-3:STATS] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073531_67b2b6ee-7273-4670-80ab-189491ae2cd8); Time taken: 67.88 seconds
+INFO  : OK
+No rows affected (70.464 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> DESCRIBE FORMATTED pm_orc;
+INFO  : Compiling command(queryId=hive_20261124073641_fe5efac4-240c-4429-b58c-860a3887fb67): DESCRIBE FORMATTED pm_orc
+INFO  : Semantic Analysis Completed (retrial = false)
+INFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:col_name, type:string, comment:from deserializer), FieldSchema(name:data_type, type:string, comment:from deserializer), FieldSchema(name:comment, type:string, comment:from deserializer)], properties:null)
+INFO  : EXPLAIN output for queryid hive_20261124073641_fe5efac4-240c-4429-b58c-860a3887fb67 : STAGE DEPENDENCIES:
+  Stage-0 is a root stage [DDL]
+  Stage-1 depends on stages: Stage-0 [FETCH]
+
+STAGE PLANS:
+  Stage: Stage-0
+      Describe Table Operator:
+        Describe Table
+          result file: file:/tmp/hive/453ab05f-3859-4b40-a25c-5099ebeacb3a/hive_2026-11-24_07-36-41_979_7414653536379110903-4/-local-10000
+          table: pm_orc
+
+  Stage: Stage-1
+    Fetch Operator
+      limit: -1
+      Processor Tree:
+        ListSink
+
+
+INFO  : Completed compiling command(queryId=hive_20261124073641_fe5efac4-240c-4429-b58c-860a3887fb67); Time taken: 0.396 seconds
+INFO  : Executing command(queryId=hive_20261124073641_fe5efac4-240c-4429-b58c-860a3887fb67): DESCRIBE FORMATTED pm_orc
+INFO  : Starting task [Stage-0:DDL] in serial mode
+INFO  : Completed executing command(queryId=hive_20261124073641_fe5efac4-240c-4429-b58c-860a3887fb67); Time taken: 0.387 seconds
+INFO  : OK
++-------------------------------+----------------------------------------------------+-----------------------------+
+|           col_name            |                     data_type                      |           comment           |
++-------------------------------+----------------------------------------------------+-----------------------------+
+| # col_name                    | data_type                                          | comment                     |
+| deviceid                      | int                                                |                             |
+| devicename                    | int                                                |                             |
+| resourcename                  | string                                             |                             |
+| collectiontime                | string                                             |                             |
+| granularityperiod             | int                                                |                             |
+| rxunicast                     | string                                             |                             |
+| rxmulcast                     | string                                             |                             |
+| rxbrdcast                     | string                                             |                             |
+57 rows selected (1.262 seconds)
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> 
+0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjf> | txunicast                     | string                                             |                             |
+| txmulcast                     | string                                             |                             |
+| txbrdcast                     | string                                             |                             |
+| rxfullbgood                   | string                                             |                             |
+| txfullbgood                   | string                                             |                             |
+| txpkts                        | string                                             |                             |
+| rxpkts                        | string                                             |                             |
+| port_rx_bw_utilization        | string                                             |                             |
+| port_tx_bw_utilization        | string                                             |                             |
+| eth_rx_throughput_max         | string                                             |                             |
+| eth_rx_throughput_min         | string                                             |                             |
+| eth_rx_throughput_avg         | string                                             |                             |
+| rx_drop_ratio                 | double                                             |                             |
+| tx_drop_ratio                 | double                                             |                             |
+| eth_tx_throughput_max         | string                                             |                             |
+| eth_tx_throughput_min         | string                                             |                             |
+| eth_tx_throughput_avg         | string                                             |                             |
+|                               | NULL                                               | NULL                        |
+| # Detailed Table Information  | NULL                                               | NULL                        |
+| Database:                     | asjl                                               | NULL                        |
+| OwnerType:                    | USER                                               | NULL                        |
+| Owner:                        | 496c2b62-322a-4307-98c3-cfe8d48bacf8               | NULL                        |
+| CreateTime:                   | Tue Nov 24 07:36:40 UTC 2026                       | NULL                        |
+| LastAccessTime:               | UNKNOWN                                            | NULL                        |
+| Retention:                    | 0                                                  | NULL                        |
+| Location:                     | wasb://asr-lab1-2025-11-23t19-53-21-608z@asrlab1hdistorage.blob.core.windows.net/hive/warehouse/managed/asjl.db/pm_orc | NULL                        |
+| Table Type:                   | MANAGED_TABLE                                      | NULL                        |
+| Table Parameters:             | NULL                                               | NULL                        |
+|                               | COLUMN_STATS_ACCURATE                              | {\"BASIC_STATS\":\"true\"}  |
+|                               | bucketing_version                                  | 2                           |
+|                               | numFiles                                           | 311                         |
+|                               | numRows                                            | 1011956                     |
+|                               | rawDataSize                                        | 0                           |
+|                               | totalSize                                          | 21760170                    |
+|                               | transactional                                      | true                        |
+|                               | transactional_properties                           | default                     |
+|                               | transient_lastDdlTime                              | 1795505800                  |
+|                               | NULL                                               | NULL                        |
+| # Storage Information         | NULL                                               | NULL                        |
+| SerDe Library:                | org.apache.hadoop.hive.ql.io.orc.OrcSerde          | NULL                        |
+| InputFormat:                  | org.apache.hadoop.hive.ql.io.orc.OrcInputFormat    | NULL                        |
+| OutputFormat:                 | org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat   | NULL                        |
+| Compressed:                   | No                                                 | NULL                        |
+| Num Buckets:                  | -1                                                 | NULL                        |
+| Bucket Columns:               | []                                                 | NULL                        |
+| Sort Columns:                 | []                                                 | NULL                        |
+| Storage Desc Params:          | NULL                                               | NULL                        |
+|                               | serialization.format                               | 1                           |
++-------------------------------+----------------------------------------------------+-----------------------------+
+Closing: 0: jdbc:hive2://zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181,zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181,zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net:2181/default;authentication=ActiveDirectoryManagedIdentity;httpPath=/;serviceDiscoveryMode=zooKeeper;transportMode=http;user=496c2b62-322a-4307-98c3-cfe8d48bacf8;zooKeeperNamespace=hiveserver2

@@ -1,0 +1,25 @@
+USE ASJL;
+
+DROP TABLE IF EXISTS pm_text_big;
+DROP TABLE IF EXISTS pm_orc_big;
+
+CREATE TABLE pm_text_big
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ';'
+STORED AS TEXTFILE
+AS
+SELECT p.*
+FROM pm_csv_ext p
+LATERAL VIEW EXPLODE(ARRAY(1, 2, 3, 4, 5)) t AS n;
+
+CREATE TABLE pm_orc_big
+STORED AS ORC
+TBLPROPERTIES ('orc.compress'='ZLIB')
+AS
+SELECT * FROM pm_text_big;
+
+DESCRIBE FORMATTED pm_text_big;
+DESCRIBE FORMATTED pm_orc_big;
+
+SELECT AVG(rx_drop_ratio), COUNT(*) FROM pm_text_big;
+SELECT AVG(rx_drop_ratio), COUNT(*) FROM pm_orc_big;

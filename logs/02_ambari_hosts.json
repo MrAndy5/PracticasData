@@ -1,0 +1,1630 @@
+﻿{
+  "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts?fields=Hosts/ip,Hosts/cpu_count,Hosts/total_mem,Hosts/disk_info,Hosts/os_type,host_components/HostRoles/component_name,host_components/HostRoles/state,host_components/HostRoles/ha_state",
+  "items" : [
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 4,
+        "disk_info" : [
+          {
+            "available" : "82918696",
+            "device" : "/dev/sda1",
+            "used" : "46951048",
+            "percent" : "37%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "89808868",
+            "device" : "/dev/sdb1",
+            "used" : "7556156",
+            "percent" : "8%",
+            "size" : "102624184",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.17",
+        "os_type" : "ubuntu18",
+        "total_mem" : 32872144
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/APP_TIMELINE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "APP_TIMELINE_SERVER",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HDFS_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HDFS_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HISTORYSERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HISTORYSERVER",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_METASTORE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_METASTORE",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_SERVER",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/MAPREDUCE2_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "MAPREDUCE2_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_COLLECTOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_COLLECTOR",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_GRAFANA",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_GRAFANA",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NAMENODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NAMENODE",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_SERVER",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/RESOURCEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "RESOURCEMANAGER",
+            "ha_state" : "STANDBY",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/WEBHCAT_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "WEBHCAT_SERVER",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/YARN_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "YARN_CLIENT",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZKFC",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZKFC",
+            "host_name" : "hn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 4,
+        "disk_info" : [
+          {
+            "available" : "82504576",
+            "device" : "/dev/sdb1",
+            "used" : "47365168",
+            "percent" : "37%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "90024948",
+            "device" : "/dev/sda1",
+            "used" : "7340076",
+            "percent" : "8%",
+            "size" : "102624184",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.18",
+        "os_type" : "ubuntu18",
+        "total_mem" : 32872148
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/APP_TIMELINE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "APP_TIMELINE_SERVER",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HDFS_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HDFS_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HISTORYSERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HISTORYSERVER",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_METASTORE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_METASTORE",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_SERVER",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/MAPREDUCE2_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "MAPREDUCE2_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NAMENODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NAMENODE",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_SERVER",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/RESOURCEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "RESOURCEMANAGER",
+            "ha_state" : "ACTIVE",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/WEBHCAT_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "WEBHCAT_SERVER",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/YARN_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "YARN_CLIENT",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZKFC",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZKFC",
+            "host_name" : "hn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "83764792",
+            "device" : "/dev/sdb1",
+            "used" : "46104952",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187298512",
+            "device" : "/dev/sda1",
+            "used" : "7511424",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.4",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852156
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "83767484",
+            "device" : "/dev/sdb1",
+            "used" : "46102260",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187298512",
+            "device" : "/dev/sda1",
+            "used" : "7511424",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.6",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852148
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn1-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872560",
+            "device" : "/dev/sdb1",
+            "used" : "44997184",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sda1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.15",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852152
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn10-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872536",
+            "device" : "/dev/sdb1",
+            "used" : "44997208",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sda1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.23",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852148
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn11-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872488",
+            "device" : "/dev/sda1",
+            "used" : "44997256",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sdb1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.13",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852156
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn12-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872568",
+            "device" : "/dev/sda1",
+            "used" : "44997176",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sdb1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.25",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852152
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn13-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872576",
+            "device" : "/dev/sdb1",
+            "used" : "44997168",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sda1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.5",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852148
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn14-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84873548",
+            "device" : "/dev/sda1",
+            "used" : "44996196",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sdb1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.7",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852152
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn15-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84872552",
+            "device" : "/dev/sdb1",
+            "used" : "44997192",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sda1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.22",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852160
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn16-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "83412944",
+            "device" : "/dev/sdb1",
+            "used" : "46456800",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187298512",
+            "device" : "/dev/sda1",
+            "used" : "7511424",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.8",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852160
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "83412568",
+            "device" : "/dev/sdb1",
+            "used" : "46457176",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187298500",
+            "device" : "/dev/sda1",
+            "used" : "7511436",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.9",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852148
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 8,
+        "disk_info" : [
+          {
+            "available" : "84873588",
+            "device" : "/dev/sda1",
+            "used" : "44996156",
+            "percent" : "35%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "187469788",
+            "device" : "/dev/sdb1",
+            "used" : "7340148",
+            "percent" : "4%",
+            "size" : "205311976",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.24",
+        "os_type" : "ubuntu18",
+        "total_mem" : 65852152
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/DATANODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "DATANODE",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/HIVE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "HIVE_CLIENT",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/NODEMANAGER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "NODEMANAGER",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/OOZIE_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "OOZIE_CLIENT",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/TEZ_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "TEZ_CLIENT",
+            "host_name" : "wn6-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 2,
+        "disk_info" : [
+          {
+            "available" : "83614768",
+            "device" : "/dev/sda1",
+            "used" : "46254976",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "12059284",
+            "device" : "/dev/sdb1",
+            "used" : "7340068",
+            "percent" : "38%",
+            "size" : "20464208",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.10",
+        "os_type" : "ubuntu18",
+        "total_mem" : 4014268
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/JOURNALNODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "JOURNALNODE",
+            "host_name" : "zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_CLIENT",
+            "host_name" : "zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_SERVER",
+            "host_name" : "zk0-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 2,
+        "disk_info" : [
+          {
+            "available" : "83614144",
+            "device" : "/dev/sda1",
+            "used" : "46255600",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "12059284",
+            "device" : "/dev/sdb1",
+            "used" : "7340068",
+            "percent" : "38%",
+            "size" : "20464208",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.16",
+        "os_type" : "ubuntu18",
+        "total_mem" : 4014272
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/JOURNALNODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "JOURNALNODE",
+            "host_name" : "zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_CLIENT",
+            "host_name" : "zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_SERVER",
+            "host_name" : "zk2-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        }
+      ]
+    },
+    {
+      "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+      "Hosts" : {
+        "cluster_name" : "asr-hadoop",
+        "cpu_count" : 2,
+        "disk_info" : [
+          {
+            "available" : "83614048",
+            "device" : "/dev/sda1",
+            "used" : "46255696",
+            "percent" : "36%",
+            "size" : "129886128",
+            "type" : "ext4",
+            "mountpoint" : "/"
+          },
+          {
+            "available" : "12059284",
+            "device" : "/dev/sdb1",
+            "used" : "7340068",
+            "percent" : "38%",
+            "size" : "20464208",
+            "type" : "ext4",
+            "mountpoint" : "/mnt"
+          }
+        ],
+        "host_name" : "zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+        "ip" : "10.0.0.14",
+        "os_type" : "ubuntu18",
+        "total_mem" : 4014268
+      },
+      "host_components" : [
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/JOURNALNODE",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "JOURNALNODE",
+            "host_name" : "zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/METRICS_MONITOR",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "METRICS_MONITOR",
+            "host_name" : "zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_CLIENT",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_CLIENT",
+            "host_name" : "zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "INSTALLED"
+          }
+        },
+        {
+          "href" : "http://headnodehost:8080/api/v1/clusters/asr-hadoop/hosts/zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net/host_components/ZOOKEEPER_SERVER",
+          "HostRoles" : {
+            "cluster_name" : "asr-hadoop",
+            "component_name" : "ZOOKEEPER_SERVER",
+            "host_name" : "zk3-asr-ha.scjzde1xinlelkhkjfhbkggqif.bx.internal.cloudapp.net",
+            "state" : "STARTED"
+          }
+        }
+      ]
+    }
+  ]
+}
